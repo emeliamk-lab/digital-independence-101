@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Digitale Unabhängigkeit</title>
+
+   <head>
+
+   <style>
+         body {
+            background-color: #000;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif
+            }
+         h1,h2,h3,h4,h5{
+            color: #cccccc;
+         }
+         p {
+            color: #aaaaaa;
+            margin-top: 1cm;
+            margin-bottom: 1cm;
+            }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20;
+            }
+        .card {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            transition: 0.3s
+            }
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: #00f3ff;
+            width: auto;
+            height: inherit;
+            }
+            header, footer {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: left;
+            margin: 5px 0;
+            }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00f3ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s
+            }
+        .btn:hover {
+            background-color: #00c2cc;
+            }
+        .split {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+            }
+        @media (max-width: 768px) {
+            .split {
+            flex-direction: column;
+            }
+            }
+
+         .icon-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #00f3ff;
+            color: #000;
+            box-shadow: 0 0 10px #00f3ff;
+            border: 2px solid #00f3ff;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            }
+
+         .card i {
+            font-size: 30px;
+            color: #00f3ff;
+            margin-bottom: 10px;
+            
+            border: 2px solid #00f3ff;
+            padding: 10px;
+            border-radius: 50%;
+
+            margin-bottom: 10px;
+            }
+           
+        
+         .logo {
+            color: #00f3ff;
+            font-size: 20px;
+            font-weight: bold;
+            }
+          .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #000;
+            border-bottom: 1px solid #00f3ff;
+            }
+         .navbar nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            transition: 0.3s;
+            }
+         .navbar nav a:hover {
+            color: #00c2cc;
+            }
+        .btn {
+            border: 1px solid #00f3ff;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        .btn:hover {
+            background-color: #00f3ff;
+            color: #000;
+            }
+        ::backdrop {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.7);
+            }
+      .navbar{
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+         .hero-icon {
+            font-size: 420px;
+            color: #00f3ff;
+            text-shadow: 0 0 20px #00f3ff;
+            position: relative;
+            animation: pulse 5s infinite;
+            animation-range: 290px;
+            margin-top: 5px;
+            margin-left: auto;
+
+            }
+        .hero-image img {
+            width: 500px;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+                    drop-shadow:(0 20px 40px #00f3ff);
+            transform: perspective(800px) rotateY(-10deg);
+            animation: float 20s ease-in-out infinite;
+            }
+         @keyframes float{
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-15px) rotate(-360deg);
+                }
+                100% {
+                    transform: translateY(0) rotate(-360deg);
+                }
+            }
+    </style>
+
+   </head>
+    
+<body>
+    <header>
+         <header class="navbar">
+        
+        </i><div class="logo"><i class="fa-solid fa-lock fa-lg"></i> DIGITAL INDEPENDENCE</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tips">Tipps</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+        </header>   
+          <header class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <!-- TEXT -->
+                <h1> <span style="color: #00f3ff">WELCOME</span> <br > <em>TO DIGITAL INDEPENDENCE</em></h1>
+                <a href="#tips" class="btn">Mehr erfahren</a>
+                <section>
+                <p> Schütze deine Daten. Sichere dir Freiheit <br>
+                    Kontrolliere deine Daten und schütze deine Privatsphäre.<br>
+                    Mit einfachen Tools kannst du dich effektiv vor Datenmissbrauch, <br>
+                    Cyberangriffen und Überwachungschützen.</p>
+                </section>
+                </div>
+
+             <div class="hero-image">
+                <img src="c:\Users\Emeli\Downloads\geralt-network-6605645_1280.png" alt="cyber" class="hero-icon">
+            </div>
+            <div class="hero-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+        
+        </header>
+
+
+    
+    
+    </header>
+
+<style>
+        .section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        <div class="p">
+            colgroup="col1 col2 col3"
+
+            </div>
+</style>
+    <main>
+
+        <section class="section">
+            <div class="container">
+              <p>  <h3><span style="color: #00f3ff">Wichtige <em>Tipps</em></span></h3>
+                <h2>So bleibst du sicher im Internet</h2>
+                <h4><span style="color: #00f3ff">Einige einfache Schritte, um deine digitale Unabhängigkeit zu stärken:</span> </h4>
+            </p>
+                <div class="grid">
+                    
+                    <div class="card">
+                        <i class="fa-solid fa-lock"></i>
+                     <h3>Starke Passwörter</h3>
+                     <p>Verwende Komplexe Passwörter und Passwortmanger<br>
+                         <h4><span style="color: #00f3ff">Ein starkes Passwort sollte folgende Kriterien erfüllen:</span></h4>
+                    <liste><block><h4>
+                        1. 8-12 Zeichen<br>
+                        2. Groß- und Kleinbuchstaben<br>
+                        3. Zahlen und Sonderzeichen<br>
+                        4. Keine persönlichen Informationen<br> 
+                        5. Einzigartig für jedes Konto
+                    </h4></block></liste>
+                        </p>
+                    <div class="card">
+                        <i class="fa-solid fa-shield"></i>
+                        <h3>Software Aktualisieren</h3>
+                        <p>Halte deine Software und Betriebssysteme<br>
+                         immer auf dem neuesten Stand</p>
+                        <h4><span style="color: #00f3ff">Regelmäßige Updates bieten folgende Vorteile:</span></h4>
+                    <liste><block><h4>
+                        1. Schutz vor Sicherheitslücken<br>
+                        2. Verbesserte Leistung<br>
+                        3. Neue Funktionen<br>
+                        4. Kompatibilität mit neuer Software<br>
+                        5. Schutz vor Malware und Viren 
+                    </div>
+          </div>
+                <div class="card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>VPN Nutzen</h3>
+                    <p>Verstecke deine IP-Adresse und verschlüssele<br>
+                    deine Verbindung mit einem VPN</p>
+                    <h4><span style="color: #00f3ff">Ein VPN (Virtual Private Network) bietet folgende Vorteile:</span></h4>
+                    <liste><block><h4>
+                        1. Anonymität im Internet<br>
+                        2. Schutz vor Überwachung<br>
+                        3. Zugriff auf gesperrte Inhalte<br>
+                        4. Sicheres Surfen in öffentlichen WLANs<br>
+                        5. Schutz vor Cyberangriffen
+                     </h4></block></liste>
+
+                <div class="card">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <h3>Adblocker Installieren</h3>
+                    <p>Blockiere unerwünschte Werbung<br>
+                     und schütze deine Privatsphäre mit einem Adblocker</p>
+                    <h4><span style="color: #00f3ff">Adblocker bieten folgende Vorteile:</span></h4>
+                    <liste><block><h4>
+                        1. Schutz vor Tracking<br>
+                        2. Schnellere Ladezeiten<br>
+                        3. Weniger Ablenkung<br>
+                        4. Schutz vor Malware<br>
+                        5. Verbesserte Privatsphäre
+                     </h4></block></liste>
+             </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-mobile-alt"></i>
+                    <h3>2FA aktivieren</h3>
+                    <p>Nutze 2-Faktor-Authentifizierung<br>
+                     mit einem Authentifikations-App oder SMS</p>
+                    <h4><span style="color: #00f3ff">Zwei-Faktor-Authentifizierung (2FA) bietet zusätzlichen Schutz:</span></h4>
+                    <liste><block><h4>
+                        1. Schutz vor unbefugtem Zugriff<br>
+                        2. Erhöhte Sicherheit deines Kontos<br>
+                        3. Schutz vor Phishing-Angriffen<br>
+                        4. Sicherheit bei Verwendung öffentlicher Netzwerke<br>
+                        5. Schutz vor Datenmissbrauch
+                    </h4></block></liste>
+                <div class="card">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3>Datenschutz</h3>
+                    <p>Erstelle regelmäßige Backups deiner wichtigen Daten<br>
+                        und nutze sichere Cloud-Dienste</p>
+                    <h4><span style="color: #00f3ff">Datenschutz ist entscheidend für deine digitale Unabhängigkeit:</span></h4>
+                    <liste><block><h4>
+                        1. Schütze deine persönlichen Informationen<br>
+                        2. Vermeide die Weitergabe sensibler Daten<br>
+                        3. Nutze sichere Cloud-Dienste<br>
+                        4. Erstelle regelmäßige Backups<br>
+                        5. Sei vorsichtig bei der Nutzung öffentlicher Netzwerke
+                     </p>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+        <p>2026 HM Emeli Nalani Laura </p>
+        </div>
+    </footer>
+</body>
+</html>
